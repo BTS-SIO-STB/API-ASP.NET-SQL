@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API/ChuckNorris.API.csproj": {}
+    "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API.csproj": {}
   },
   "projects": {
-    "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API/ChuckNorris.API.csproj": {
+    "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API/ChuckNorris.API.csproj",
+        "projectUniqueName": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API.csproj",
         "projectName": "ChuckNorris.API",
-        "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API/ChuckNorris.API.csproj",
+        "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API.csproj",
         "packagesPath": "/home/mirage/.nuget/packages/",
-        "outputPath": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/ChuckNorris.API/obj/",
+        "outputPath": "/home/mirage/Documents/project/program language/school/tech/MG/API-ASP.NET-SQL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mirage/.nuget/NuGet/NuGet.Config"

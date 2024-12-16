@@ -34,12 +34,29 @@ namespace ChuckNorrisApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ChuckNorrisQuote>> PostQuote(ChuckNorrisQuote quote)
+        public async Task<ActionResult<ChuckNorrisQuote>> PostQuote(string serializedQuote)
         {
+            // Simulating insecure deserialization
+            var quote = DeserializeInsecurely(serializedQuote);  // Simulate insecure deserialization
+
+            if (quote == null)
+                return BadRequest();
+
             _context.Quotes.Add(quote);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetQuote), new { id = quote.Id }, quote);
+        }
+
+        // Simulating insecure deserialization method
+        private ChuckNorrisQuote DeserializeInsecurely(string serializedData)
+        {
+            // Unsafe deserialization - using BinaryFormatter, which is vulnerable to attacks
+            var formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
+            using (var stream = new System.IO.MemoryStream(System.Convert.FromBase64String(serializedData)))
+            {
+                return (ChuckNorrisQuote)formatter.Deserialize(stream);  // Insecure deserialization
+            }
         }
 
         [HttpPut("{id}")]

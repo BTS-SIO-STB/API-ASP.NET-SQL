@@ -59,7 +59,7 @@ using (var scope = app.Services.CreateScope())
         // Fetch random Chuck Norris quotes
         var quotes = new List<ChuckNorrisQuote>();
 
-        for (int i = 0; i < 10; i++) // Fetch 10 quotes
+        for (int i = 0; i < 25; i++) // Fetch 25 quotes
         {
             var response = await httpClient.GetFromJsonAsync<ChuckNorrisApiResponse>("https://api.chucknorris.io/jokes/random");
 
